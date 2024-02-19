@@ -1,16 +1,29 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using ClipboardHistoryCLI._Clipboard;
+using ClipboardHistoryCLI.CLI;
+using Windows.ApplicationModel.DataTransfer;
 
-namespace ConsoleApp1
+namespace ClipboardHistoryCLI
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            foreach (string arg in args)
-            {
-                Console.WriteLine(arg.GetType());
-            }
+            ClipboardHandler handler = new ClipboardHandler();
 
+            CommandParser parser = new CommandParser(args);
+            string[] list;
+
+            list = parser.ListComponents();
+            Console.WriteLine($"{list} TEST");
+
+            do
+            {
+                Console.WriteLine("HI");
+                Thread.Sleep(1000);
+            }
+            while (true);
         }
     }
 }
