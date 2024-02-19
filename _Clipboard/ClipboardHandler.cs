@@ -18,9 +18,7 @@ namespace ClipboardHistoryCLI._Clipboard
 
         private void ClipboardChanged(object? sender, object e)
         {
-            Console.WriteLine("TEST");
-            Console.WriteLine($"{sender}, {e}");
-            Console.WriteLine($"{sender.GetType()}, {e.GetType()}");
+            // TODO
         }
     }
 }

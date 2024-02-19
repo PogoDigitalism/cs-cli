@@ -18,12 +18,12 @@ namespace ClipboardHistoryCLI
             list = parser.ListComponents();
             Console.WriteLine($"{list} TEST");
 
-            do
+/*            do
             {
                 Console.WriteLine("HI");
                 Thread.Sleep(1000);
             }
-            while (true);
+            while (true);*/
         }
     }
 }
